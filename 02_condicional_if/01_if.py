@@ -3,61 +3,53 @@
 # Permeten executar blocs de codi només si es compleixen certes condicions.
 ###
 
-# Podem importar mòduls de Python per fer-los servir als nostres programes.
-# En aquest cas, importem el mòdul "os", que ens dona accés a funcions
-# relacionades amb el sistema operatiu.
-import os
-# system() ens permet executar una ordre al terminal.
-# En aquest cas, ho fem per netejar la pantalla.
-os.system("cls") # Windows
-
 # print("\n Sentència condicional simple")
 
 # Podem fer servir la paraula clau "if" per executar un bloc de codi
 # només si es compleix una condició.
-# edad = 18
-# if edad >= 18:
+# edat = 18
+# if edat >= 18:
 #   print("Ets major d'edat")
 #   print("Felicitats!")
 
 # Si no es compleix la condició, no s'executa el bloc de codi.
-# edad = 15
-# if edad >= 18:
+# edat = 15
+# if edat >= 18:
 #   print("Ets major d'edat")
 # print("Felicitats!")
 
 # Podem fer servir la paraula clau "else" per executar un bloc de codi
 # si no es compleix la condició anterior de l'if.
 # print("\n Sentència condicional amb else")
-# edad = 15
-# if edad >= 18:
+# edat = 15
+# if edat >= 18:
 #   print("Ets major d'edat")
 # else:
 #   print("Ets menor d'edat")
   
-# if edad >= 18:
+# if edat >= 18:
 #   print("Ets major d'edat")
-# if edad < 18:
+# if edat < 18:
 #   print("Ets menor d'edat")
 
-print("\n Sentència condicional amb elif")
-nota = 7
+# print("\n Sentència condicional amb elif")
+# nota = 7
 
 # A més de fer servir "if" i "else", podem fer servir "elif" per comprovar
 # diverses condicions. Tingues en compte que només s'executarà el primer bloc
 # de codi que compleixi la condició (o el de l'else, si n'hi ha).
-if nota >= 9:
-  print("Excel·lent!")
-elif nota >= 7:
-  print("Notable!")
-elif nota >= 5:
-  print("Aprovat!")
-else:
-  print("No ha aprovat!")
+# if nota >= 9:
+#   print("Excel·lent!")
+# elif nota >= 7:
+#   print("Notable!")
+# elif nota >= 5:
+#   print("Aprovat!")
+# else:
+#   print("No ha aprovat!")
 
-# print("\n Condicions múltiples")
-# edad = 16
-# tiene_carnet = True
+print("\n Condicions múltiples")
+edat = 16
+te_carnet = True
 
 # Els operadors lògics de Python són:
 # and: True si tots dos operands són certs.
@@ -66,46 +58,51 @@ else:
 # && equival a and
 # || equival a or
 
+# edat = 16
+# te_carnet = True
+
 # Si ets major d'edat i tens carnet...
 # podràs conduir.
-# if edad >= 18 and tiene_carnet:
-#   print("Pots conduir 🚗")
-# else:
-#   print("POLICIA 🚔!!!1!!!")
+if edat >= 18 and te_carnet:
+  print("Pots conduir 🚗")
+else:
+  print("POLICIA 🚔!!!1!!!")
 
 # En un poble de l'illa Margarita són més permissius i
 # et deixen conduir si ets major d'edat O tens carnet.
-# if edad >= 18 or tiene_carnet:
+# if edat >= 18 or te_carnet:
 #   print("Pots conduir a l'illa Margarita 🚗")
 # else:
 #   print("Paga al policia i et deixarà conduir!!!")
 
 # També tenim l'operador lògic "not",
 # que ens permet negar una condició.
-es_fin_de_semana = False
+es_cap_de_setmana = False
 # JavaScript -> !
-# if not es_fin_de_semana:
+# if not es_cap_de_setmana:
   # print("Marc, va, que hem de fer classe!")
 
-# Podem niar condicionals, l'un dins de l'altre,
+# Podem anidar condicionals, l'un dins de l'altre,
 # per comprovar diverses condicions, tot i que
 # intentarem evitar-ho per simplificar el codi.
-# print("\n Condicionals niats")
-# edad = 20
-# tiene_dinero = False
+# print("\n Condicionals imbricats")
+# edat = 20
+# te_diners = False
 
-# if edad >= 18:
-#   if tiene_dinero:
+# if edat >= 18:
+#   if te_diners:
 #     print("Pots anar a la discoteca")
 #   else:
 #     print("Pots entrar a la discoteca, però no comprar res")
 # else:
 #   print("No pots entrar a la discoteca")
 
+# edat = 20
+# te_diners = False
 # Una manera més senzilla seria:
-# if edad < 18:
+# if edat < 18:
 #   print("No pots entrar a la discoteca")
-# elif tiene_dinero:
+# elif te_diners:
 #   print("Pots anar a la discoteca")
 # else:
 #   print("Queda't a casa")
@@ -118,15 +115,15 @@ es_fin_de_semana = False
 #   print("El nombre no és zero")
 
 # En canvi, el nombre 0 s'avalua com a False.
-# numero = 0
-# if numero: # False
-#   print("Aquí no s'entrarà mai")
-# print("Aquí sí que s'executa i continua fins al final del codi")
+numero = 0
+if numero: # False
+  print("Aquí no s'entrarà mai")
+print("Aquí sí que s'executa i continua fins al final del codi")
 
 # El valor buit "" també s'avalua com a False.
-# nombre = ""
-# if nombre:
-#   print("El nom no és buit")
+nombre = ""
+if nombre:
+  print("El nom no és buit")
 
 # Ves amb compte de no confondre l'assignació = amb la comparació ==!
 # numero = 3 # assignació
@@ -140,32 +137,6 @@ es_fin_de_semana = False
 # print("\nL'expressió condicional:")
 # [codi si es compleix la condició] if [condició] else [codi si no es compleix]
 # En JavaScript seria: [condició] ? [codi si es compleix] : [codi si no es compleix]
-# edad = 19
-# missatge = "És major d'edat" if edad >= 18 else "És menor d'edat"
-# print(missatge)
-
-###
-# EXERCICIS
-###
-
-# Exercici 1: Determinar el més gran de dos nombres
-# Demana a l'usuari que introdueixi dos nombres i mostra un missatge
-# que indiqui quin és més gran o si són iguals.
-
-
-# Exercici 2: Calculadora senzilla
-# Demana a l'usuari dos nombres i una operació (+, -, *, /).
-# Fes l'operació i mostra'n el resultat (gestiona la divisió per zero).
-
-# Exercici 3: Any de traspàs
-# Demana a l'usuari que introdueixi un any i determina si és de traspàs.
-# Un any és de traspàs si és divisible per 4, excepte si és divisible per 100
-# però no per 400.
-
-# Exercici 4: Classificar edats
-# Demana a l'usuari que introdueixi una edat i classifica-la en:
-# - Nadó (0-2 anys)
-# - Infant (3-12 anys)
-# - Adolescent (13-17 anys)
-# - Adult (18-64 anys)
-# - Persona gran (65 anys o més)
+edat = 197
+missatge = "És major d'edat" if edat >= 18 else "És menor d'edat"
+print(missatge)
